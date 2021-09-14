@@ -12,7 +12,7 @@ namespace GettingStartedBound
     {
         #region Fields
 
-        private string fileName;
+        private string itemName;
         private ImageSource imageIcon;
         private ObservableCollection<FileManager> subFiles;
 
@@ -38,11 +38,11 @@ namespace GettingStartedBound
 
         public string ItemName
         {
-            get { return fileName; }
+            get { return itemName; }
             set
             {
-                fileName = value;
-                RaisedOnPropertyChanged("FolderName");
+                itemName = value;
+                RaisedOnPropertyChanged("ItemName");
             }
         }
         public ImageSource ImageIcon
